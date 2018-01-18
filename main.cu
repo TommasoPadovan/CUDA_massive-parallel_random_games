@@ -132,16 +132,7 @@ int main() {
     cudaMemcpy(C, Cd, size*sizeof(int), cudaMemcpyDeviceToHost);
     cudaFree(Cd);
     cudaFree(states);
-
-
-//    int uniform[4] = {0};
-//    for (int i = 0; i<size; ++i) {
-//        ++uniform[C[i]];
-//        //printf("%u ", C[i]);
-//    }
-//    for (int i = 0; i<4; ++i) {
-//        printf("%u \n", uniform[i]);
-//    }
+    
 
     long double success = 0;
     for (int i = 0; i<size; ++i) {
